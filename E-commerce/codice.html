@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-commerce - Prodotto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="foglio">
+        <header>
+            
+            <div class="nav-container">
+                <a href="homepage.html" class="logo-link">
+                    <img src="logo.svg" alt="Logo Aziendale" width="100" height="30">
+                </a>
+                <nav class="nav-links">
+                    <span>Accedi</span>
+                    <span>Prodotti</span>
+                    <span>Assistenza</span>
+                    <span>Carrello</span>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="flex-container">
+                
+                <div class="col-immagini">
+                    <img src="imagine0.png" id="mainImg" class="main-img" alt="Smartwatch X-Y-Z Turbo">
+                    
+                    <div class="galleria-mini">
+                        <img src="imagine2.png" alt="Vista 1" onclick="document.getElementById('mainImg').src=this.src">
+                        <img src="imagine1.png" alt="Vista 2" onclick="document.getElementById('mainImg').src=this.src">
+                        <img src="imagine4.png" alt="Vista 3" onclick="document.getElementById('mainImg').src=this.src">
+                        <img src="imagine5.png" alt="Vista 3" onclick="document.getElementById('mainImg').src=this.src">
+                        <img src="imagine6.png" alt="Vista 3" onclick="document.getElementById('mainImg').src=this.src">
+                    </div>
+                </div>
+                
+                
+                <div class="col-info">
+                    <h1>Smartwatch X-Y-Z Turbo 2024</h1>
+                    <p class="prezzo-vecchio">€199,99</p>
+                    <h2 class="prezzo-nuovo">€149,00 <small>IVA INCLUSA</small></h2>
+                    
+                    <div class="opzioni-acquisto">
+                        <p><strong>Colore:</strong></p>
+                        <label><input type="radio" name="colore" value="nero" checked> Nero</label>
+                        <label><input type="radio" name="colore" value="rosso"> Rosso</label>
+                        <label><input type="radio" name="colore" value="blu"> Blu</label>
+                        <label><input type="radio" name="colore" value="verde" checked> Verde</label>
+                    </div>
+
+                    <div class="quantita">
+                        <p><strong>Quantità:</strong></p>
+                        <input type="number" min="1" value="1">
+                    </div>
+
+                    <div class="pulsanti">
+                        <button class="compra">Acquista Ora</button>
+                        <button class="aggCarrello">Aggiungi al Carrello</button>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="sezione-titolo">
+                <h3>Descrizione Prodotto</h3>
+                <p>Lo Smartwatch X-Y-Z Turbo 2024 combina eleganza e tecnologia di ultima generazione. Monitora la tua attività fisica, ricevi notifiche e gestisci la tua musica direttamente dal polso con un design resistente.</p>
+            </section>
+
+            <section class="sezione-titolo">
+                <h3>Caratteristiche Tecniche</h3>
+                <div class="specifiche">
+                    <div class="iconcina">
+                        <span>⚖️</span>
+                        <p>Peso: <strong>45g</strong> (Ultraleggero)</p>
+                    </div>
+                    <div class="iconcina">
+                        <span>🛠️</span>
+                        <p>Cassa in <strong>Alluminio Aero</strong></p>
+                    </div>
+                    <div class="iconcina">
+                        <span>🔋</span>
+                        <p>Batteria: <strong>7 Giorni</strong></p>
+                    </div>
+                    <div class="iconcina">
+                        <span>📶</span>
+                        <p>Bluetooth <strong>5.2 LE</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sezione-titolo">
+                <h3>Recensioni Verificate</h3>
+                <div class="recensioni-container">
+                    <div class="card-recensione">
+                        <div class="stelle">⭐⭐⭐⭐☆</div>
+                        <p>"Che bello lavoro abbiamo fatto."</p>
+                        <span class="nome-utente">Abdel karim</span>
+                    </div>
+                    <div class="card-recensione">
+                        <div class="stelle">⭐⭐⭐⭐⭐</div>
+                        <p>"Spedizione lampo e display luminosissimo. Top!"</p>
+                        <span class="nome-utente">Alberto Liberatore</span>
+                    </div>
+                    <div class="card-recensione">
+                        <div class="stelle">⭐⭐⭐⭐☆</div>
+                        <p>"Ottimo per lo sport, l'app è molto intuitiva."</p>
+                        <span class="nome-utente">Serena Greco</span>
+                    </div>
+                    <div class="card-recensione">
+                        <div class="stelle">⭐⭐⭐⭐☆</div>
+                        <p>"Bel lavoro, come stile secondo me può andare, è un'idea più chiara del progetto finale.."</p>
+                        <span class="nome-utente">Marchesini E.</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 X-Y-Z Turbo. Tutti i diritti riservati.</p>
+        </footer>
+    </div>
+</body>
+</html>
